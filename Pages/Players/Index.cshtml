@@ -10,20 +10,52 @@
     </h1>
 </div>
 
+<form class="form-group">
+    <label asp-for="SelectedTeam" class="control-label">Team: </label>
+    <select asp-for="SelectedTeam" class="p-2" asp-items="Model.Teams" onchange="this.form.submit();">
+        <option value="">All</option>
+    </select>
+    <label asp-for="SelectedPosition" class="control-label">Position: </label>
+    <select asp-for="SelectedPosition" class="p-2" asp-items="Model.Position" onchange="this.form.submit();">
+        <option value="">All</option>
+    </select>
+    <label asp-for="SearchString" class="contol-label">Name: </label>
+    <input asp-for="SearchString" type="text" class="p-2"/>
+    <input type="submit" value="Search" class="btn btn-sm btn-primary" />
+    <label asp-for="SortField" class="control-label">Sort By: </label>
+    <select asp-for="SortField" class="p-2" onchange="this.form.submit();">
+        <option value="Name">Name</option>
+        <option value="TeamId">TeamId</option>
+        <option value="Position">Position</option>
+    </select>
+</form>
+
 <div class="d-flex bg-primary text-white">
     <div class="p-2" style="flex:0 0 10%">TeamID</div>
     <div class="p-2" style="flex:1 0 auto">Name</div>
     <div class="p-2" style="flex:0 0 20%">Position</div>
-    <div class="p-2" style="flex:0 0 20%">Options</div>
 </div>
 
-@foreach (var item in Model.Players){
-    <div class="d-flex border-left border-right border-bottom border-primary">
-        <div class="p-2" style="flex:0 0 10%">@item.TeamId</div>
-        <div class="p-2" style="flex:1 0 auto">@item.Name</div>
-        <div class="p-2" style="flex:0 0 20%">@item.Position</div>
-        <div class="p-2 btn-group" style="flex:0 0 20%" role="group" >
-            <a class="btn btn-primary btn-sm" asp-page="./Detail" asp-route-id="@item.PlayerId">Details</a>
+@foreach (var player in Model.Players){
+    if (player.Depth == 1)
+    {
+        <a asp-page="./Player" asp-route-id="@player.PlayerId" class="text-decoration-none link-dark">
+        <div class="d-flex border-left border-right border-bottom border-primary font-weight-bold link-unstyled">
+            <div class="p-2" style="flex:0 0 10%">@player.TeamId</div>
+            <div class="p-2" style="flex:1 0 auto">@player.Name</div>
+            <div class="p-2" style="flex:0 0 20%">@player.Position</div>
         </div>
-    </div>
+        </a>
+    }
+    else
+    {
+        <a asp-page="./Player" asp-route-id="@player.PlayerId" class="text-decoration-none link-dark">
+        <div class="d-flex border-left border-right border-bottom border-primary link-unstyled">
+            <div class="p-2" style="flex:0 0 10%">@player.TeamId</div>
+            <div class="p-2" style="flex:1 0 auto">@player.Name</div>
+            <div class="p-2" style="flex:0 0 20%">@player.Position</div>
+        </div>
+        </a>
+    }
+    
 }

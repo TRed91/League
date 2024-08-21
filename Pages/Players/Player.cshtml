@@ -1,0 +1,82 @@
+@page "/player/{id}"
+@model PlayerModel
+@{
+    ViewData["Title"] = "Player Detail";
+    string imgLink = $"~/image/nfl/logo/{Model.Player.TeamId}.png";
+}
+
+<div class="jumbotron p-3 d-flex align-items-center">
+    <h1 class="display-4 flex-grow-1">
+        @Model.Player.Name
+    </h1>
+    <img src="@imgLink" asp-append-version="true"/>
+</div>
+
+<div class="d-flex border-top border-left border-right border-bottom border-primary">
+    <div class="p-2 bg-primary text-white" style="flex:0 0 10%">TeamId: </div>
+    <div class="p-2" style="flex:1 0 auto">@Model.Player.TeamId</div>
+</div>
+<div class="d-flex border-left border-right border-bottom border-primary">
+    <div class="p-2 bg-primary text-white" style="flex:0 0 10%">PlayerId: </div>
+    <div class="p-2" style="flex:1 0 auto">@Model.Player.PlayerId</div>
+</div>
+<div class="d-flex border-left border-right border-bottom border-primary">
+    <div class="p-2 bg-primary text-white" style="flex:0 0 10%">Number: </div>
+    <div class="p-2" style="flex:1 0 auto">@Model.Player.Number</div>
+</div>
+<div class="d-flex border-left border-right border-bottom border-primary">
+    <div class="p-2 bg-primary text-white" style="flex:0 0 10%">Position: </div>
+    <div class="p-2" style="flex:1 0 auto">@Model.Player.Position</div>
+</div>
+<div class="d-flex border-left border-right border-bottom border-primary">
+    <div class="p-2 bg-primary text-white" style="flex:0 0 10%">Height: </div>
+    <div class="p-2" style="flex:1 0 auto">@Model.Player.Height</div>
+</div>
+<div class="d-flex border-left border-right border-bottom border-primary">
+    <div class="p-2 bg-primary text-white" style="flex:0 0 10%">Weight: </div>
+    <div class="p-2" style="flex:1 0 auto">@Model.Player.Weight</div>
+</div>
+<div class="d-flex border-left border-right border-bottom border-primary">
+    <div class="p-2 bg-primary text-white" style="flex:0 0 10%">Age: </div>
+    <div class="p-2" style="flex:1 0 auto">@Model.Player.Age</div>
+</div>
+<div class="d-flex border-left border-right border-bottom border-primary">
+    <div class="p-2 bg-primary text-white" style="flex:0 0 10%">Birthdate: </div>
+    <div class="p-2" style="flex:1 0 auto">@Model.Player.BirthDate</div>
+</div>
+<div class="d-flex border-left border-right border-bottom border-primary">
+    <div class="p-2 bg-primary text-white" style="flex:0 0 10%">Experience: </div>
+    <div class="p-2" style="flex:1 0 auto">@Model.Player.Experience</div>
+</div>
+<div class="d-flex border-left border-right border-bottom border-primary">
+    <div class="p-2 bg-primary text-white" style="flex:0 0 10%">Draft Year: </div>
+    <div class="p-2" style="flex:1 0 auto">@Model.Player.DraftYear</div>
+</div>
+<div class="d-flex border-left border-right border-bottom border-primary">
+    <div class="p-2 bg-primary text-white" style="flex:0 0 10%">Draft Round: </div>
+    <div class="p-2" style="flex:1 0 auto">@Model.Player.DraftRound</div>
+</div>
+<div class="d-flex border-left border-right border-bottom border-primary">
+    <div class="p-2 bg-primary text-white" style="flex:0 0 10%">Draft Pick: </div>
+    <div class="p-2" style="flex:1 0 auto">@Model.Player.DraftPick</div>
+</div>
+<div class="d-flex border-left border-right border-bottom border-primary">
+    <div class="p-2 bg-primary text-white" style="flex:0 0 10%">College: </div>
+    <div class="p-2" style="flex:1 0 auto">@Model.Player.College</div>
+</div>
+<div class="d-flex border-left border-right border-bottom border-primary">
+    <div class="p-2 bg-primary text-white" style="flex:0 0 10%">State: </div>
+    <div class="p-2" style="flex:1 0 auto">@Model.Player.State</div>
+</div>
+<div class="d-flex border-left border-right border-bottom border-primary">
+    <div class="p-2 bg-primary text-white" style="flex:0 0 10%">Rank: </div>
+    <div class="p-2" style="flex:1 0 auto">@Model.Player.Rank</div>
+</div>
+<div class="d-flex border-left border-right border-bottom border-primary">
+    <div class="p-2 bg-primary text-white" style="flex:0 0 10%">Rating: </div>
+    <div class="p-2" style="flex:1 0 auto">@Model.Player.Rating</div>
+</div>
+<div class="d-flex border-left border-right border-bottom border-primary">
+    <div class="p-2 bg-primary text-white" style="flex:0 0 10%">Depth: </div>
+    <div class="p-2" style="flex:1 0 auto">@Model.Player.Depth</div>
+</div>

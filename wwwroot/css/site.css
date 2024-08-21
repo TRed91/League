@@ -101,3 +101,15 @@ section.grid a
 {
   background-color: gold;
 }
+
+.link-unstyled {
+    color: black;
+}
+
+.link-unstyled:hover {
+    background-color: cyan;
+}
+
+.link-unstyled:visited {
+    color: black;
+}

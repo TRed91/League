@@ -1,0 +1,154 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\thoma\\Documents\\GitHub\\League\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BD7FDEF7-B4E2-47E3-8193-380794753E83}|League.csproj|c:\\users\\thoma\\documents\\github\\league\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD7FDEF7-B4E2-47E3-8193-380794753E83}|League.csproj|solutionrelative:pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD7FDEF7-B4E2-47E3-8193-380794753E83}|League.csproj|c:\\users\\thoma\\documents\\github\\league\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD7FDEF7-B4E2-47E3-8193-380794753E83}|League.csproj|solutionrelative:pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD7FDEF7-B4E2-47E3-8193-380794753E83}|League.csproj|c:\\users\\thoma\\documents\\github\\league\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD7FDEF7-B4E2-47E3-8193-380794753E83}|League.csproj|solutionrelative:pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD7FDEF7-B4E2-47E3-8193-380794753E83}|League.csproj|c:\\users\\thoma\\documents\\github\\league\\pages\\players\\player.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD7FDEF7-B4E2-47E3-8193-380794753E83}|League.csproj|solutionrelative:pages\\players\\player.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD7FDEF7-B4E2-47E3-8193-380794753E83}|League.csproj|c:\\users\\thoma\\documents\\github\\league\\models\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD7FDEF7-B4E2-47E3-8193-380794753E83}|League.csproj|solutionrelative:models\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD7FDEF7-B4E2-47E3-8193-380794753E83}|League.csproj|c:\\users\\thoma\\documents\\github\\league\\wwwroot\\image\\nfl\\nfl.png||{58961B49-13E0-48C0-9258-13CBC4D40279}",
+      "RelativeMoniker": "D:0:0:{BD7FDEF7-B4E2-47E3-8193-380794753E83}|League.csproj|solutionrelative:wwwroot\\image\\nfl\\nfl.png||{58961B49-13E0-48C0-9258-13CBC4D40279}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD7FDEF7-B4E2-47E3-8193-380794753E83}|League.csproj|c:\\users\\thoma\\documents\\github\\league\\pages\\players\\player.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD7FDEF7-B4E2-47E3-8193-380794753E83}|League.csproj|solutionrelative:pages\\players\\player.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD7FDEF7-B4E2-47E3-8193-380794753E83}|League.csproj|c:\\users\\thoma\\documents\\github\\league\\wwwroot\\image\\nfl\\logo\\dal.png||{58961B49-13E0-48C0-9258-13CBC4D40279}",
+      "RelativeMoniker": "D:0:0:{BD7FDEF7-B4E2-47E3-8193-380794753E83}|League.csproj|solutionrelative:wwwroot\\image\\nfl\\logo\\dal.png||{58961B49-13E0-48C0-9258-13CBC4D40279}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\thoma\\Documents\\GitHub\\League\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\thoma\\Documents\\GitHub\\League\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-21T11:12:52.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\thoma\\Documents\\GitHub\\League\\Pages\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\thoma\\Documents\\GitHub\\League\\Pages\\Index.cshtml.cs",
+              "RelativeToolTip": "Pages\\Index.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T11:02:45.801Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\thoma\\Documents\\GitHub\\League\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\thoma\\Documents\\GitHub\\League\\Pages\\Index.cshtml",
+              "RelativeToolTip": "Pages\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-21T11:02:21.071Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "nfl.png",
+              "DocumentMoniker": "C:\\Users\\thoma\\Documents\\GitHub\\League\\wwwroot\\image\\nfl\\nfl.png",
+              "RelativeDocumentMoniker": "wwwroot\\image\\nfl\\nfl.png",
+              "ToolTip": "C:\\Users\\thoma\\Documents\\GitHub\\League\\wwwroot\\image\\nfl\\nfl.png",
+              "RelativeToolTip": "wwwroot\\image\\nfl\\nfl.png",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-08-21T11:02:09.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "dal.png",
+              "DocumentMoniker": "C:\\Users\\thoma\\Documents\\GitHub\\League\\wwwroot\\image\\nfl\\logo\\dal.png",
+              "RelativeDocumentMoniker": "wwwroot\\image\\nfl\\logo\\dal.png",
+              "ToolTip": "C:\\Users\\thoma\\Documents\\GitHub\\League\\wwwroot\\image\\nfl\\logo\\dal.png",
+              "RelativeToolTip": "wwwroot\\image\\nfl\\logo\\dal.png",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-08-21T09:40:10.928Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\thoma\\Documents\\GitHub\\League\\Models\\Player.cs",
+              "RelativeDocumentMoniker": "Models\\Player.cs",
+              "ToolTip": "C:\\Users\\thoma\\Documents\\GitHub\\League\\Models\\Player.cs",
+              "RelativeToolTip": "Models\\Player.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T09:24:31.535Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Player.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\thoma\\Documents\\GitHub\\League\\Pages\\Players\\Player.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Players\\Player.cshtml.cs",
+              "ToolTip": "C:\\Users\\thoma\\Documents\\GitHub\\League\\Pages\\Players\\Player.cshtml.cs",
+              "RelativeToolTip": "Pages\\Players\\Player.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T08:56:37.034Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Player.cshtml",
+              "DocumentMoniker": "C:\\Users\\thoma\\Documents\\GitHub\\League\\Pages\\Players\\Player.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Players\\Player.cshtml",
+              "ToolTip": "C:\\Users\\thoma\\Documents\\GitHub\\League\\Pages\\Players\\Player.cshtml",
+              "RelativeToolTip": "Pages\\Players\\Player.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-21T08:56:06.065Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using League.Models;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Linq;
+using Microsoft.AspNetCore.Http;
 
 namespace League.Pages.Players
 {
@@ -30,6 +31,8 @@ namespace League.Pages.Players
 
         public SelectList Teams {  get; set; }
 		public SelectList Position { get; set; }
+
+        public string Favorite { get; set; }
 
 		public IndexModel(LeagueContext context)
         {
@@ -66,6 +69,10 @@ namespace League.Pages.Players
                 case "TeamId": players = players.OrderBy(player => player.TeamId); break;
                 case "Position": players = players.OrderBy(player => player.Position); break;
             }
+
+            
+                Favorite = HttpContext.Session.GetString("favorite");
+            
 
             Players = await players.ToListAsync();
 

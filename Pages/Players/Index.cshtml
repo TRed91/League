@@ -37,25 +37,50 @@
 </div>
 
 @foreach (var player in Model.Players){
-    if (player.Depth == 1)
+    if (player.TeamId == Model.Favorite)
     {
-        <a asp-page="./Player" asp-route-id="@player.PlayerId" class="text-decoration-none link-dark">
-        <div class="d-flex border-left border-right border-bottom border-primary font-weight-bold link-unstyled">
-            <div class="p-2" style="flex:0 0 10%">@player.TeamId</div>
-            <div class="p-2" style="flex:1 0 auto">@player.Name</div>
-            <div class="p-2" style="flex:0 0 20%">@player.Position</div>
-        </div>
-        </a>
+        if (player.Depth == 1)
+        {
+            <a asp-page="./Player" asp-route-id="@player.PlayerId" class="text-decoration-none link-dark">
+                <div class="d-flex border-left border-right border-bottom border-primary font-weight-bold link-unstyled" style="background-color:gold;">
+                    <div class="p-2" style="flex:0 0 10%">@player.TeamId</div>
+                    <div class="p-2" style="flex:1 0 auto">@player.Name</div>
+                    <div class="p-2" style="flex:0 0 20%">@player.Position</div>
+                </div>
+            </a>
+        }
+        else
+        {
+            <a asp-page="./Player" asp-route-id="@player.PlayerId" class="text-decoration-none link-dark">
+                <div class="d-flex border-left border-right border-bottom border-primary link-unstyled" style="background-color:gold;">
+                    <div class="p-2" style="flex:0 0 10%">@player.TeamId</div>
+                    <div class="p-2" style="flex:1 0 auto">@player.Name</div>
+                    <div class="p-2" style="flex:0 0 20%">@player.Position</div>
+                </div>
+            </a>
+        }
     }
     else
     {
-        <a asp-page="./Player" asp-route-id="@player.PlayerId" class="text-decoration-none link-dark">
-        <div class="d-flex border-left border-right border-bottom border-primary link-unstyled">
-            <div class="p-2" style="flex:0 0 10%">@player.TeamId</div>
-            <div class="p-2" style="flex:1 0 auto">@player.Name</div>
-            <div class="p-2" style="flex:0 0 20%">@player.Position</div>
-        </div>
-        </a>
+        if (player.Depth == 1)
+        {
+            <a asp-page="./Player" asp-route-id="@player.PlayerId" class="text-decoration-none link-dark">
+                <div class="d-flex border-left border-right border-bottom border-primary font-weight-bold link-unstyled">
+                    <div class="p-2" style="flex:0 0 10%">@player.TeamId</div>
+                    <div class="p-2" style="flex:1 0 auto">@player.Name</div>
+                    <div class="p-2" style="flex:0 0 20%">@player.Position</div>
+                </div>
+            </a>
+        }
+        else
+        {
+            <a asp-page="./Player" asp-route-id="@player.PlayerId" class="text-decoration-none link-dark">
+                <div class="d-flex border-left border-right border-bottom border-primary link-unstyled">
+                    <div class="p-2" style="flex:0 0 10%">@player.TeamId</div>
+                    <div class="p-2" style="flex:1 0 auto">@player.Name</div>
+                    <div class="p-2" style="flex:0 0 20%">@player.Position</div>
+                </div>
+            </a>
+        }
     }
-    
 }

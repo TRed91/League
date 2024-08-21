@@ -1,0 +1,70 @@
+@page
+@model IndexModel
+@{
+	ViewData["Title"] = "Teams";
+}
+
+<div class="jumbotron p-3 d-flex align-items-center">
+    <img src="/image/nfl/nfl.png" asp-append-version="true"/>
+    <h1 class="display-4">Teams</h1>
+</div>
+
+<form class="form-group">
+    <label asp-for="SelectFavorite" class="control-label">Favorite: </label>
+    <select asp-for="SelectFavorite" onchange="this.form.submit();">
+        <option value="">None</option>
+        @foreach(var team in Model.Teams)
+        {
+            <option value="@team.TeamId">@team.Name</option>
+        }
+    </select>
+</form>
+
+@foreach(var conference in Model.Conferences)
+{
+    <h1>@conference.Name</h1>
+    @foreach(var division in Model.Divisions)
+    {
+        if (division.ConferenceId == conference.ConferenceId)
+        {
+            <div class="bg-primary text-white p-2">
+                <h2>@division.Name</h2>
+            </div>
+            <div class="d-flex bg-success text-white">
+                <div class="p-2" style="flex:0 0 10%">Division</div>
+                <div class="p-2" style="flex:1 0 auto">Name</div>
+                <div class="p-2" style="flex:0 0 20%">Win/Loss</div>
+            </div>
+            @foreach (var team in Model.Teams)
+            {
+                if (team.DivisionId == division.DivisionId)
+                {
+                    if (team.TeamId == Model.SelectFavorite)
+                    {
+                        <a asp-page="./Team" asp-route-id="@team.TeamId" class="text-decoration-none link-dark">
+                            <div class="d-flex border-left border-right border-bottom border-success link-unstyled" style="background-color: gold;">
+                                <div class="p-2" style="flex:0 0 10%">@team.DivisionId</div>
+                                <div class="p-2" style="flex:0 0 10%">@team.Division.Name</div>
+                                <div class="p-2" style="flex:1 0 auto">@team.Name</div>
+                                <div class="p-2" style="flex:0 0 20%">@team.Win / @team.Loss</div>
+                            </div>
+                        </a>
+                    }
+                    else
+                    {
+                        <a asp-page="./Team" asp-route-id="@team.TeamId" class="text-decoration-none link-dark">
+                            <div class="d-flex border-left border-right border-bottom border-success link-unstyled">
+                                <div class="p-2" style="flex:0 0 10%">@team.DivisionId</div>
+                                <div class="p-2" style="flex:0 0 10%">@team.Division.Name</div>
+                                <div class="p-2" style="flex:1 0 auto">@team.Name</div>
+                                <div class="p-2" style="flex:0 0 20%">@team.Win / @team.Loss</div>
+                            </div>
+                        </a>
+                    }  
+                }
+                
+            }
+        }               
+    }
+}
+

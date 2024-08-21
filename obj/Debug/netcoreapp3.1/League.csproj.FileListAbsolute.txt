@@ -154,7 +154,6 @@ C:\Users\thoma\Documents\GitHub\League\obj\Debug\netcoreapp3.1\Razor\Pages\Priva
 C:\Users\thoma\Documents\GitHub\League\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_Layout.cshtml.g.cs
 C:\Users\thoma\Documents\GitHub\League\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\thoma\Documents\GitHub\League\obj\Debug\netcoreapp3.1\Razor\Pages\Teams\Index.cshtml.g.cs
-C:\Users\thoma\Documents\GitHub\League\obj\Debug\netcoreapp3.1\Razor\Pages\Teams\Player.cshtml.g.cs
 C:\Users\thoma\Documents\GitHub\League\obj\Debug\netcoreapp3.1\Razor\Pages\Teams\Team.cshtml.g.cs
 C:\Users\thoma\Documents\GitHub\League\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewImports.cshtml.g.cs
 C:\Users\thoma\Documents\GitHub\League\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewStart.cshtml.g.cs

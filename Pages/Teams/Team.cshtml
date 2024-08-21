@@ -1,0 +1,38 @@
+@page "/team/{id}"
+@model TeamModel
+@{
+	ViewData["Title"] = "Team Details";
+	string teamLogo = $"~/image/nfl/logo/{Model.Team.TeamId}.png";
+	string stadium  = $"~/image/nfl/stadium/{Model.Team.TeamId}.jpg";
+	string seating  = $"~/image/nfl/seating/{Model.Team.TeamId}.png";
+}
+
+<div class="jumbotron p-3 d-flex align-items-center">
+	<img src="@teamLogo" asp-append-version="true" />
+	<h1 class="display-4 flex-grow-1">
+		@Model.Team.Name
+	</h1>
+</div>
+
+<img src="@stadium" asp-append-version="true" />
+<img src="@seating" asp-append-version="true" />
+
+<div class="d-flex bg-primary text-white">
+	<div class="p-2" style="flex:0 0 10%">Player ID</div>
+	<div class="p-2" style="flex:1 0 auto">Name</div>
+	<div class="p-2" style="flex:0 0 20%">Position</div>
+</div>
+
+@foreach (var player in Model.Players)
+{
+	if (player.TeamId == Model.Team.TeamId)
+	{
+		<a asp-page="/Players/Player" asp-route-id="@player.PlayerId" class="text-decoration-none link-dark">
+			<div class="d-flex border-left border-right border-bottom border-primary link-unstyled">
+				<div class="p-2" style="flex:0 0 10%">@player.PlayerId</div>
+				<div class="p-2" style="flex:1 0 auto">@player.Name</div>
+				<div class="p-2" style="flex:0 0 20%">@player.Position</div>
+			</div>
+		</a>
+	}
+}

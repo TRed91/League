@@ -113,3 +113,7 @@ section.grid a
 .link-unstyled:visited {
     color: black;
 }
+
+.bg-gold {
+    background-color: gold;
+}
